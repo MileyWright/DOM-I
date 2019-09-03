@@ -42,12 +42,14 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 // Header
-nav1 = document.querySelector('nav a').textContent = siteContent['nav']['nav-item-1'];
+// nav = document.querySelectorAll('a').style.color = 'green';
+nav1 = document.querySelector('nav a:nth-child(1)').textContent = siteContent['nav']['nav-item-1'];
 nav2 = document.querySelector('nav a:nth-child(2)').textContent = siteContent['nav']['nav-item-2'];
 nav3 = document.querySelector('nav a:nth-child(3)').textContent = siteContent['nav']['nav-item-3']
 nav4 = document.querySelector('nav a:nth-child(4)').textContent = siteContent['nav']['nav-item-4']
 nav5 = document.querySelector('nav a:nth-child(5)').textContent = siteContent['nav']['nav-item-5']
 nav6 = document.querySelector('nav a:nth-child(6)').textContent = siteContent['nav']['nav-item-6']
+
 
 // Call To Action
 ctaText = document.querySelector('.cta-text h1').textContent = siteContent['cta']['h1']
@@ -72,5 +74,11 @@ productText = document.querySelector('.bottom-content .text-content:nth-child(2)
 visionTitle = document.querySelector('.bottom-content .text-content:nth-child(3) h4').textContent = siteContent['main-content']['vision-h4']
 visionText = document.querySelector('.bottom-content .text-content:nth-child(3) p').textContent = siteContent['main-content']['vision-content']
 
+// Contact
+contactTitle = document.querySelector('.contact h4').textContent = siteContent['contact']['contact-h4']
+contactAddress = document.querySelector('.contact p:nth-child(2)').textContent = siteContent['contact']['address']
+contactNumber = document.querySelector('.contact p:nth-child(3)').textContent = siteContent['contact']['phone']
+contactEmail = document.querySelector('.contact p:nth-child(4)').textContent = siteContent['contact']['email']
 
-
+// footer
+footerText = document.querySelector('footer p').textContent = siteContent['footer']['copyright']
