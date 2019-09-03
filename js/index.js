@@ -55,5 +55,22 @@ ctaButton = document.querySelector('.cta-text button').textContent = siteContent
 ctaImg = document.getElementById('cta-img').setAttribute('src', siteContent['cta']['img-src'])
 
 // Main Content
+featuresTitle = document.querySelector('.top-content .text-content h4').textContent = siteContent['main-content']['features-h4']
+featuresText = document.querySelector('.top-content .text-content p').textContent = siteContent['main-content']['features-content']
+
+aboutTitle = document.querySelector('.top-content .text-content:nth-child(2) h4').textContent = siteContent['main-content']['about-h4']
+aboutTitle = document.querySelector('.top-content .text-content:nth-child(2) p').textContent = siteContent['main-content']['about-content']
+
+mainImg = document.getElementById('middle-img').src = siteContent['main-content']['middle-img-src']
+
+servicesTitle = document.querySelector('.bottom-content .text-content h4').textContent = siteContent['main-content']['services-h4']
+servicesText = document.querySelector('.bottom-content .text-content p').textContent = siteContent['main-content']['services-content']
+
+productTitle = document.querySelector('.bottom-content .text-content:nth-child(2) h4').textContent = siteContent['main-content']['product-h4']
+productText = document.querySelector('.bottom-content .text-content:nth-child(2) p').textContent = siteContent['main-content']['product-content']
+
+visionTitle = document.querySelector('.bottom-content .text-content:nth-child(3) h4').textContent = siteContent['main-content']['vision-h4']
+visionText = document.querySelector('.bottom-content .text-content:nth-child(3) p').textContent = siteContent['main-content']['vision-content']
+
 
 
