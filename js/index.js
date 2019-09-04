@@ -42,13 +42,27 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 // Header
-// nav = document.querySelectorAll('a').style.color = 'green';
+
+
 nav1 = document.querySelector('nav a:nth-child(1)').textContent = siteContent['nav']['nav-item-1'];
 nav2 = document.querySelector('nav a:nth-child(2)').textContent = siteContent['nav']['nav-item-2'];
 nav3 = document.querySelector('nav a:nth-child(3)').textContent = siteContent['nav']['nav-item-3']
 nav4 = document.querySelector('nav a:nth-child(4)').textContent = siteContent['nav']['nav-item-4']
 nav5 = document.querySelector('nav a:nth-child(5)').textContent = siteContent['nav']['nav-item-5']
 nav6 = document.querySelector('nav a:nth-child(6)').textContent = siteContent['nav']['nav-item-6']
+
+
+const shop = document.createElement('a')
+shop.textContent = 'Shop';
+const navBar = document.querySelector('nav');                                                                                                                                                                                                                                                                                                            
+navBar.appendChild(shop);
+
+const home = document.createElement('a')
+home.textContent = 'Home'
+navBar.prepend(home)
+const navColor = document.querySelectorAll('a').forEach((element) => {
+  element.style.color = 'green';
+});
 
 
 // Call To Action
