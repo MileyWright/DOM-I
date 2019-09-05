@@ -57,11 +57,14 @@ shop.textContent = 'Shop';
 const navBar = document.querySelector('nav');                                                                                                                                                                                                                                                                                                            
 navBar.appendChild(shop);
 
+
 const home = document.createElement('a')
 home.textContent = 'Home'
 navBar.prepend(home)
+
 const navColor = document.querySelectorAll('a').forEach((element) => {
   element.style.color = 'green';
+  element.style.cursor = 'pointer';
 });
 
 
@@ -88,6 +91,10 @@ productText = document.querySelector('.bottom-content .text-content:nth-child(2)
 visionTitle = document.querySelector('.bottom-content .text-content:nth-child(3) h4').textContent = siteContent['main-content']['vision-h4']
 visionText = document.querySelector('.bottom-content .text-content:nth-child(3) p').textContent = siteContent['main-content']['vision-content']
 
+const topContentColor = document.querySelectorAll('h4').forEach((element) => {
+    element.style.color = '#004890';
+    element.style.fontSize = '1.3rem';
+})
 // Contact
 contactTitle = document.querySelector('.contact h4').textContent = siteContent['contact']['contact-h4']
 contactAddress = document.querySelector('.contact p:nth-child(2)').textContent = siteContent['contact']['address']
